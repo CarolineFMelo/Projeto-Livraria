@@ -58,6 +58,11 @@ h3 {
     margin: 1rem;
 }
 
+h5 {
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
 h6 {
     color: var(--medium-grey);
 }
@@ -153,6 +158,15 @@ ion-icon {
     font-size: 1.5rem;
     color: var(--logo-color);
     margin-right: 0.3rem;
+}
+
+#items-list {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+#items-list li {
+    display: flex;
 }
 
 /* Rodapé */

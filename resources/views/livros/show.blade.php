@@ -35,6 +35,15 @@
         <ion-icon name="cash-outline"></ion-icon>R${{ $livro->price }}
       </p>
 
+      <h5>O livro acompanha:</h5>
+      <ul id="items-list">
+        @foreach($livro->items as $item)
+        <li>
+          <ion-icon name="checkmark"></ion-icon>{{ $item }}
+        </li>
+        @endforeach
+      </ul>
+
       <a href="/buy" class="button">Comprar</a>
     </div>
 

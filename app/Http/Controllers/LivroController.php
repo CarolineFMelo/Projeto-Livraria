@@ -41,6 +41,7 @@ class LivroController extends Controller
     $livro->publishing = $request->publishing;
     $livro->description = $request->description;
     $livro->price = $request->price;
+    $livro->items = $request->items;
 
     // Upload de imagens.
     if ($request->hasFile('image') && $request->file('image')->isValid()) {

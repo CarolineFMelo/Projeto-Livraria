@@ -39,6 +39,24 @@
       <label for="title">Preço:</label>
       <input type="text" class="form-control" id="price" name="price" placeholder="Preço">
     </div>
+    <div class="form-group">
+      <label for="title">Adicione itens característicos:</label>
+      <div class="form-group">
+        <input type="checkbox" name="items[]" value="cartonado"> Capa dura/cartonado
+      </div>
+      <div class="form-group">
+        <input type="checkbox" name="items[]" value="brochura"> Capa mole/brochura
+      </div>
+      <div class="form-group">
+        <input type="checkbox" name="items[]" value="marcador"> Marcador de página
+      </div>
+      <div class="form-group">
+        <input type="checkbox" name="items[]" value="pôster"> Pôster
+      </div>
+      <div class="form-group">
+        <input type="checkbox" name="items[]" value="autógrafo"> Autógrafo
+      </div>
+    </div>
     <input type="submit" class="button" value="Adicionar Livro">
 
   </form>
