@@ -1,0 +1,171 @@
+/* Variáveis */
+:root {
+    --logo-color: #ff7000;
+    --base-color: #ffa661;
+    --white: #fff;
+    --black: #000;
+    --medium-grey: #8f8f8f;
+}
+
+/* Gerais */
+* {
+    font-family: "Roboto";
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.msg {
+    background-color: var(--base-color);
+    color: var(--white);
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+}
+
+.list {
+    color: var(--logo-color);
+    display: inline;
+    margin-inline: 5.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+a:hover {
+    color: var(--logo-color);
+    text-decoration: overline;
+}
+
+/* Titulos */
+h1,
+h2,
+h3 {
+    color: var(--logo-color);
+    margin: 1rem;
+}
+
+h6 {
+    color: var(--medium-grey);
+}
+
+p {
+    margin: 1rem;
+}
+
+/* Divisores */
+hr {
+    height: 0.2rem;
+    background-color: var(--logo-color);
+    opacity: 1;
+    border: none;
+}
+
+/* Corpo */
+body {
+    position: relative;
+}
+
+#about {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    height: 29rem;
+}
+
+/* Pesquisa */
+#search-container {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+    padding: 5rem;
+    text-align: center;
+}
+
+/* Livros */
+a.button-book {
+    color: var(--logo-color);
+}
+
+a.button-book:hover {
+    color: var(--black);
+    text-decoration: overline;
+}
+
+#cards-container {
+    display: flex;
+}
+
+#livros-container .card {
+    flex: 1 1 15%;
+    max-width: 15%;
+    border-radius: 0.5rem;
+    padding: 0;
+    margin: 0.5%;
+}
+
+#livros-container img {
+    width: 12rem;
+    height: 13rem;
+}
+
+/* Formulário */
+a.button,
+.button {
+    background-color: var(--logo-color);
+    color: var(--white);
+    border: none;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin-left: 40%;
+}
+
+a.button:hover,
+.button:hover {
+    background-color: #ffa661;
+    text-decoration: none;
+}
+
+#livro-create-container {
+    padding: 0.1rem;
+}
+
+#livro-create-container label {
+    font-weight: bold;
+}
+
+/* Ver mais */
+ion-icon {
+    font-size: 1.5rem;
+    color: var(--logo-color);
+    margin-right: 0.3rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: var(--medium-grey);
+    color: var(--white);
+    padding: 1rem;
+    position: absolute;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
