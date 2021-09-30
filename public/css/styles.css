@@ -37,7 +37,7 @@ header {
 .list {
     color: var(--logo-color);
     display: inline;
-    margin-inline: 5.5rem;
+    margin-inline: 5rem;
 }
 
 a {
@@ -58,17 +58,26 @@ h3 {
     margin: 1rem;
 }
 
-h7 {
-    font-weight: bold;
-    margin-left: 1rem;
+h4 {
+    color: var(--logo-color);
+    margin-top: 1rem;
 }
 
 h6 {
     color: var(--medium-grey);
 }
 
+h7 {
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
 p {
     margin: 1rem;
+}
+
+span {
+    color: var(--black);
 }
 
 /* Divisores */
@@ -98,6 +107,20 @@ body {
     height: 15rem;
     padding: 5rem;
     text-align: center;
+}
+
+#search-container .input-search {
+    width: 30rem;
+}
+
+.button-search {
+    border: none;
+    background-color: var(--logo-color);
+    color: var(--white);
+}
+
+.button-search:hover {
+    background-color: var(--base-color);
 }
 
 /* Livros */

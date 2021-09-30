@@ -30,9 +30,31 @@
         <li class="list">
             <a href="/livros/create">Novo Livro</a>
         </li>
+
+        @auth
+        <li class="list">
+            <a href="/dashboard">Livros</a>
+        </li>
+        <li class="list">
+            <form action="/logout" method="POST">
+                @csrf
+                <a href="/logout" onclick="livro.preventDefault();
+                this.closest('form').submit();">Sair
+                </a>
+            </form>
+        </li>
+        @endauth
+        @guest
         <li class="list">
             <a href="/about">Sobre nós</a>
         </li>
+        <li class="list">
+            <a href="/login">Login</a>
+        </li>
+        <li class="list">
+            <a href="/register">Cadastrar</a>
+        </li>
+        @endguest
     </ul>
     <hr class="divider">
 </header>

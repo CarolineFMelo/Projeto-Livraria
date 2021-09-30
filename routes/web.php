@@ -26,3 +26,7 @@ Route::post('/livros', [LivroController::class, 'store']);
 Route::get('/about', [LivroController::class, 'about']);
 
 Route::get('/buy', [LivroController::class, 'buy']);
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');

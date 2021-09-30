@@ -10,9 +10,24 @@ class LivroController extends Controller
 {
   public function index()
   {
-    $livros = Livro::all();
 
-    return view('welcome', ['livros' => $livros]);
+    $search = request('search');
+
+    // title = nome do livro pra pesquisa
+    // like = pode ser um título parecido, não precisa ser idêntico
+    // % = pode ser qualquer coisa pra trás ou pra frente do que quer buscar
+
+    if ($search) {
+
+      $livros = Livro::where([
+        ['title', 'like', '%' . $search . '%']
+      ])->get();
+    } else {
+
+      $livros = Livro::all();
+    }
+
+    return view('welcome', ['livros' => $livros, 'search' => $search]);
   }
 
   public function create()
