@@ -1,3 +1,22 @@
+## Downloads necessários
+-Composer: gerenciador de pacotes no nível do aplicativo para a linguagem de programação PHP que fornece um formato padrão para gerenciar dependências do software PHP e bibliotecas necessárias.<br>
+-Xampp: pacote com os principais servidores de código aberto do mercado, incluindo FTP, banco de dados MySQL e Apache com suporte a linguagem PHP.
+
+## Passo a passo para execução
+### Banco de dados
+-Start no Apache e no MySQL pelo Xampp.<br>
+-Acessar o link para ter acesso ao banco de dados:<br>
+("http://localhost/phpmyadmin/index.php?route=/sql&db=livraria-books&table=livros&pos=0")
+
+### Projeto
+-Abrir projeto no ambiente de desenvolvimento e digitar o comando: php artisan serve <br>
+-Uma porta localhost ficará disponível.<br>
+-Abrir o localhost no navegador.
+
+### Tecnologias utilizadas
+-PHP: linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML.<br>
+-Laravel: framework PHP gratuito e de código aberto, utilizado no desenvolvimento de sistemas para web. Algumas de suas principais características são permitir a escrita de um código mais simples e legível, e suporte a recursos avançados que agilizam o processo de desenvolvimento.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
