@@ -35,7 +35,6 @@ class LivroController extends Controller
     return view('livros.create');
   }
 
-
   public function about()
   {
     return view('about');
