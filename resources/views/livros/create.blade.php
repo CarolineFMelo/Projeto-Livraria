@@ -56,6 +56,10 @@
       <div class="form-group">
         <input type="checkbox" name="items[]" value="autógrafo"> Autógrafo
       </div>
+      <div class="form-group">
+        <label for="date">Data de lançamento:</label>
+        <input type="date" class="form-control" id="date" name="date">
+      </div>
     </div>
     <input type="submit" class="button" value="Adicionar Livro">
 

@@ -23,8 +23,11 @@
       </p>
 
       <p class="livro-publishing">
-        <ion-icon name="book-outline"></ion-icon>
-        </ion-icon>Editora {{ $livro->publishing }}
+        <ion-icon name="book-outline"></ion-icon>Editora {{ $livro->publishing }}
+      </p>
+
+      <p class="livro-date">
+        <ion-icon name="calendar-outline"></ion-icon>Publicado em {{ date("d/m/Y", strtotime($livro->date)) }}
       </p>
 
       <p class="livro-description">
@@ -35,7 +38,7 @@
         <ion-icon name="cash-outline"></ion-icon>R${{ $livro->price }}
       </p>
 
-      <h5>O livro acompanha:</h5>
+      <h7>O livro acompanha:</h7>
       <ul id="items-list">
         @foreach($livro->items as $item)
         <li>

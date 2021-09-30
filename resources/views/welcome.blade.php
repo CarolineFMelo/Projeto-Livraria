@@ -22,7 +22,12 @@
 <div id="livros-container">
 
     <h3>Livros</h3>
-    <p>Veja nosso catálogo de livros disponíveis</p>
+
+    @if(count($livros) == 0)
+    <h7>Não há livros disponíveis.</h7>
+    @else(count($livros) != 0)
+    <h7>Veja nosso catálogo de livros disponíveis</h7>
+    @endif
 
     <div id="cards-container" class="row">
         @foreach($livros as $livro)
