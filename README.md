@@ -13,11 +13,11 @@
 -Uma porta localhost ficará disponível.<br>
 -Abrir o localhost no navegador.
 
-### Tecnologias utilizadas
+## Tecnologias utilizadas
 -PHP: linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML.<br>
 -Laravel: framework PHP gratuito e de código aberto, utilizado no desenvolvimento de sistemas para web. Algumas de suas principais características são permitir a escrita de um código mais simples e legível, e suporte a recursos avançados que agilizam o processo de desenvolvimento.
 
-### Funcionalidades
+## Funcionalidades
 -Novo livro: cria um novo livro que será armazenado no banco de dados a partir de um formulário.<br>
 -Ver mais: mostra todas as informçãções sobre o livro.<br>
 -Deletar: deleta o livro do banco de dados e consequentemente do site.<br>
