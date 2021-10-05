@@ -90,4 +90,18 @@ class LivroController extends Controller
     Livro::findOrFail($id)->delete();
     return redirect('/')->with('msg', 'Livro excluído com sucesso!');
   }
+
+  public function edit($id)
+  {
+    $livro = Livro::findOrFail($id);
+
+    return view('livros.edit', ['livro' => $livro]);
+  }
+
+  public function update(Request $request)
+  {
+    Livro::findOrFail($request->id)->update($request->all());
+
+    return redirect('/')->with('msg', 'Livro editado com sucesso!');
+  }
 }

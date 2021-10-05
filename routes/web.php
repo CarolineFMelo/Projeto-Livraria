@@ -29,6 +29,10 @@ Route::get('/buy', [LivroController::class, 'buy']);
 
 Route::delete('/livros/{id}', [LivroController::class, 'destroy']);
 
+Route::get('/livros/edit/{id}', [LivroController::class, 'edit']);
+
+Route::put('/livros/update/{id}', [LivroController::class, 'update']);
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');

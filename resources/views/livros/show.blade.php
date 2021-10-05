@@ -47,13 +47,18 @@
         @endforeach
       </ul>
 
-      <a href="/buy" class="button">Comprar</a>
+      <div class="config">
+        <a href="/buy" class="button">Comprar</a>
 
-      <form action="/livros/{{ $livro->id }}" method="POST">
-        @csrf
-        @method('DELETE')
-        <button type="submit" class="button">Deletar</button>
-      </form>
+        <a href="/livros/edit/{{ $livro->id }}" class="button">Editar</a>
+
+        <form action="/livros/{{ $livro->id }}" method="POST">
+          @csrf
+          @method('DELETE')
+          <button type="submit" class="button">Deletar</button>
+        </form>
+      </div>
+
     </div>
 
   </div>

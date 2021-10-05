@@ -14,4 +14,6 @@ class Livro extends Model
     ];
 
     protected $dates = ['date'];
+
+    protected $guarded = [];
 }

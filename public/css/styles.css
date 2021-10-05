@@ -1,4 +1,4 @@
-/* Variáveis */
+/* Variables */
 :root {
     --logo-color: #ff7000;
     --base-color: #ffa661;
@@ -7,7 +7,7 @@
     --medium-grey: #8f8f8f;
 }
 
-/* Gerais */
+/* General */
 * {
     font-family: "Roboto";
 }
@@ -29,7 +29,7 @@
     margin: 0;
 }
 
-/* Cabeçalho */
+/* Header */
 header {
     text-align: center;
 }
@@ -50,7 +50,7 @@ a:hover {
     text-decoration: overline;
 }
 
-/* Titulos */
+/* Titles */
 h1,
 h2,
 h3 {
@@ -80,7 +80,7 @@ span {
     color: var(--black);
 }
 
-/* Divisores */
+/* Divider */
 hr {
     height: 0.2rem;
     background-color: var(--logo-color);
@@ -88,7 +88,7 @@ hr {
     border: none;
 }
 
-/* Corpo */
+/* Body */
 body {
     position: relative;
 }
@@ -99,7 +99,7 @@ body {
     height: 29rem;
 }
 
-/* Pesquisa */
+/* Search */
 #search-container {
     background-image: url("../img/banner.jpg");
     background-size: cover;
@@ -123,7 +123,7 @@ body {
     background-color: var(--base-color);
 }
 
-/* Livros */
+/* Books */
 a.button-book {
     color: var(--logo-color);
 }
@@ -150,7 +150,7 @@ a.button-book:hover {
     height: 13rem;
 }
 
-/* Formulário */
+/* Form */
 a.button,
 .button {
     background-color: var(--logo-color);
@@ -159,7 +159,7 @@ a.button,
     margin: 0.5rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    margin-left: 40%;
+    margin-left: 5rem;
 }
 
 a.button:hover,
@@ -176,7 +176,7 @@ a.button:hover,
     font-weight: bold;
 }
 
-/* Ver mais */
+/* See more */
 ion-icon {
     font-size: 1.5rem;
     color: var(--logo-color);
@@ -192,7 +192,17 @@ ion-icon {
     display: flex;
 }
 
-/* Rodapé */
+.config {
+    display: flex;
+}
+
+/* Edit page */
+.img-preview {
+    width: 10rem;
+    margin-top: 2rem;
+}
+
+/* Footer */
 footer {
     text-align: center;
     background-color: var(--medium-grey);
