@@ -17,6 +17,12 @@
 -PHP: linguagem de script open source de uso geral, muito utilizada, e especialmente adequada para o desenvolvimento web e que pode ser embutida dentro do HTML.<br>
 -Laravel: framework PHP gratuito e de código aberto, utilizado no desenvolvimento de sistemas para web. Algumas de suas principais características são permitir a escrita de um código mais simples e legível, e suporte a recursos avançados que agilizam o processo de desenvolvimento.
 
+### Funcionalidades
+-Novo livro: cria um novo livro que será armazenado no banco de dados a partir de um formulário.<br>
+-Ver mais: mostra todas as informçãções sobre o livro.<br>
+-Deletar: deleta o livro do banco de dados e consequentemente do site.<br>
+-Editar: edita informações do livro no banco de dados através de um formulário.<br>
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
