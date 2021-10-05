@@ -100,7 +100,25 @@ class LivroController extends Controller
 
   public function update(Request $request)
   {
-    Livro::findOrFail($request->id)->update($request->all());
+
+    $data = $request->all();
+
+    // Image upload
+    if ($request->hasFile('image') && $request->file('image')->isValid()) {
+
+      $requestImage = $request->image;
+
+      $extension = $requestImage->extension();
+
+      // Pega o nome do arquivo e cria uma string única baseada no tempo do upload.
+      $imageName = md5($requestImage->getClientOriginalname() . strtotime('now')) . "." . $extension;
+
+      $requestImage->move(public_path('img/livros'), $imageName);
+
+      $data['image'] = $imageName;
+    }
+
+    Livro::findOrFail($request->id)->update($data);
 
     return redirect('/')->with('msg', 'Livro editado com sucesso!');
   }
