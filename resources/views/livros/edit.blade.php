@@ -33,14 +33,17 @@
       <label for="title">Editora:</label>
       <input type="text" class="form-control" id="publishing" name="publishing" placeholder="Editora" value="{{ $livro->publishing }}">
     </div>
+
     <div class="form-group">
       <label for="title">Descrição:</label>
-      <textarea name="description" id="description" class="form-control" placeholder="Descrição" value="{{ $livro->description }}"></textarea>
+      <textarea type="text" name="description" id="description" class="form-control" value="{{$livro->description}}">{{$livro->description}}</textarea>
     </div>
+
     <div class=" form-group">
       <label for="title">Preço:</label>
       <input type="text" class="form-control" id="price" name="price" placeholder="Preço" value="{{ $livro->price }}">
     </div>
+
     <div class="form-group">
       <label for="title">Adicione itens característicos:</label>
       <div class="form-group">

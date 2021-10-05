@@ -120,6 +120,7 @@ class LivroController extends Controller
 
     Livro::findOrFail($request->id)->update($data);
 
+
     return redirect('/')->with('msg', 'Livro editado com sucesso!');
   }
 }
