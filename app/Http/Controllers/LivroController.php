@@ -80,9 +80,14 @@ class LivroController extends Controller
 
   public function show($id)
   {
-
     $livro = Livro::findOrFail($id);
 
     return view('livros.show', ['livro' => $livro]);
+  }
+
+  public function destroy($id)
+  {
+    Livro::findOrFail($id)->delete();
+    return redirect('/')->with('msg', 'Livro excluído com sucesso!');
   }
 }

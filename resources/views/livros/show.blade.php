@@ -48,6 +48,12 @@
       </ul>
 
       <a href="/buy" class="button">Comprar</a>
+
+      <form action="/livros/{{ $livro->id }}" method="POST">
+        @csrf
+        @method('DELETE')
+        <button type="submit" class="button">Deletar</button>
+      </form>
     </div>
 
   </div>
