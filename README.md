@@ -19,7 +19,7 @@
 
 ## Funcionalidades
 -Novo livro: cria um novo livro que será armazenado no banco de dados a partir de um formulário.<br>
--Ver mais: mostra todas as informçãções sobre o livro.<br>
+-Ver mais: mostra todas as informações sobre o livro.<br>
 -Deletar: deleta o livro do banco de dados e consequentemente do site.<br>
 -Editar: edita informações do livro no banco de dados através de um formulário.<br>
 
